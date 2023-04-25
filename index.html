@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Lista de contatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="top">
+                <h1>Meus contatos</h1>
+                <div class="icons">
+                    <i class="ph ph-plus"></i>
+                    <i class="ph ph-pencil"></i>
+                    <i class="ph ph-trash"></i>
+                </div>
+            </div>
+            <div class="input">
+                <label for="searchContact"><i class="ph ph-magnifying-glass"></i></label>
+                <input type="text" name="searchContact" id="searchContact"
+                    placeholder="Busque por nome ou por dados de contato...">
+            </div>
+        </header>
+        <main id="main">
+            <div class="wrapper">
+                <div class="letter">A</div>
+                <div class="list-contact">
+                    <div class="contact">
+                        <img src="https://avatars.githubusercontent.com/u/47388425?v=4" alt="">
+                        <div class="info">
+                            <h2>dasd</h2>
+                            <p>dasda</p>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <img src="https://avatars.githubusercontent.com/u/47388425?v=4" alt="">
+                        <div class="info">
+                            <h2>dasd</h2>
+                            <p>dasda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <div class="modal-wrapper" id="backdrop">
+            <div class="modal">
+                <h2>Adicionar novo contato</h2>
+                <input type="text" name="name" id="name" placeholder="Nome do contato" required>
+                <input type="text" name="number" id="number" placeholder="(81) 98939-2940" required>
+                <button onclick="newContact()" type="submit">Adicionar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
